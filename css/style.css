@@ -200,10 +200,6 @@ nav li a:hover:after {
   display: flex;
   gap: 15px;
 }
-.filters-buttons-row {
-  display: flex;
-  gap: 15px;
-}
 
 .filters-section button {
   display: flex;
@@ -613,10 +609,6 @@ a {
     text-align: center;
   }
 
-  .filters-buttons-row {
-    width: 100%;
-    gap: 10px;
-  }
   .filters-buttons-row {
     width: 100%;
     gap: 10px;
