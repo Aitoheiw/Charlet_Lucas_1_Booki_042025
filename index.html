@@ -34,58 +34,52 @@
       </header>
 
       <main>
-        <div class="info-group">
-          <section class="search-container">
+        <section class="info-group">
+          <div class="search-container">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
-          </section>
-          <form class="search-bar">
+          </div>
+          <form class="search-bar" method="get">
             <div class="search-icon">
               <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
             </div>
             <div class="search-bar-input">
-              <input type="text" placeholder="Marseille, France" />
+              <input
+                type="text"
+                name="q"
+                placeholder="Marseille, France"
+                required
+              />
               <button type="submit">
                 <span class="button-icon"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="17"
-                    height="17"
-                    viewBox="0 0 17 17"
-                    fill="none"
-                  >
-                    <path
-                      d="M16.7688 14.6976L13.4582 11.3876C13.3088 11.2382 13.1062 11.1552 12.8937 11.1552H12.3525C13.2689 9.9832 13.8135 8.50913 13.8135 6.90558C13.8135 3.09091 10.7221 0 6.90676 0C3.09144 0 0 3.09091 0 6.90558C0 10.7202 3.09144 13.8112 6.90676 13.8112C8.51058 13.8112 9.98491 13.2667 11.1571 12.3504V12.8915C11.1571 13.104 11.2401 13.3065 11.3895 13.4559L14.7001 16.7659C15.0122 17.078 15.517 17.078 15.8258 16.7659L16.7655 15.8264C17.0776 15.5143 17.0776 15.0097 16.7688 14.6976ZM6.90676 11.1552C4.55912 11.1552 2.65644 9.25613 2.65644 6.90558C2.65644 4.55834 4.5558 2.65599 6.90676 2.65599C9.25439 2.65599 11.1571 4.55502 11.1571 6.90558C11.1571 9.25281 9.25771 11.1552 6.90676 11.1552Z"
-                      fill="white"
-                    />
-                  </svg>
+                  ><i class="fa-solid fa-magnifying-glass search-white"></i>
                 </span>
                 <span class="button-text">Rechercher</span>
               </button>
             </div>
           </form>
 
-          <section class="filters-section">
+          <div class="filters-section">
             <h2>Filtres</h2>
             <div class="filters-buttons">
-              <div class="filters-buttons-first-row">
+              <div class="filters-buttons-row">
                 <button>
                   <i class="fa-solid fa-money-bill-wave"></i> Économique
                 </button>
                 <button><i class="fa-solid fa-person"></i> Familial</button>
               </div>
-              <div class="filters-buttons-second-row">
+              <div class="filters-buttons-row">
                 <button><i class="fa-solid fa-heart"></i> Romantique</button>
                 <button><i class="fa-solid fa-fire"></i> Nos pépites</button>
               </div>
             </div>
-          </section>
+          </div>
 
           <div class="info-logements">
             <img src="./images/icon/Icon.svg" alt="Info" />
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
           </div>
-        </div>
+        </section>
 
         <div class="hebergements-and-populaires" id="hebergements-ancre">
           <section class="hebergements">
@@ -93,7 +87,7 @@
               <h2 class="section-title">Hébergements à Marseille</h2>
             </div>
             <div class="hebergements-cards">
-              <div class="first-row">
+              <div class="row">
                 <a href="#">
                   <article class="card">
                     <img src="./images/hebergements/fred-kleber.jpg" alt="" />
@@ -209,7 +203,7 @@
                   </article>
                 </a>
               </div>
-              <div class="second-row">
+              <div class="row">
                 <a href="#">
                   <article class="card">
                     <img
@@ -423,7 +417,7 @@
             </div>
           </section>
         </div>
-        <div class="activites" id="activites-ancre">
+        <section class="activites" id="activites-ancre">
           <h2 class="section-title">Activités à Marseille</h2>
           <div class="activites-container">
             <a href="#">
@@ -479,12 +473,12 @@
               </article>
             </a>
           </div>
-        </div>
+        </section>
       </main>
       <footer>
         <div class="a-propos">
           <ul>
-            <li class="footer-title">À propos</li>
+            <li><h3>À propos</h3></li>
             <li><a href="#">Fonctionnement du site</a></li>
             <li><a href="#">Conditions générales</a></li>
             <li><a href="#">Données et confidentialité</a></li>
@@ -492,21 +486,17 @@
         </div>
         <div class="nos-hebergements">
           <ul>
-            <li class="footer-title">Nos hébergements</li>
+            <li><h3>Nos hébergements</h3></li>
             <li><a href="#">Charte qualité</a></li>
             <li><a href="#">Proposer votre hôtel</a></li>
           </ul>
         </div>
         <div class="assistance">
           <ul>
-            <li class="footer-title">Assistance</li>
+            <li><h3>Assistance</h3></li>
             <li><a href="#">Centre d’aide</a></li>
             <li>
-              <a
-                href="https://mail.google.com/mail/?view=cm&to=contact@booki.com"
-                target="_blank"
-                >Nous contacter</a
-              >
+              <a href="mailto:contact@booki.com">Nous contacter</a>
             </li>
           </ul>
         </div>

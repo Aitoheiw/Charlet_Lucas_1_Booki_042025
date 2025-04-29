@@ -11,10 +11,6 @@
   --filter-bg-color: #deebff;
 }
 
-.fa-solid {
-  color: var(--main-color);
-}
-
 html {
   overflow-y: scroll;
 }
@@ -175,7 +171,7 @@ nav li a:hover:after {
 .button-icon {
   display: none;
   color: white;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .filters-section {
@@ -196,11 +192,15 @@ nav li a:hover:after {
   flex: 1 0 0;
 }
 
-.filters-buttons-first-row {
+.filters-buttons i {
+  color: var(--main-color);
+}
+
+.filters-buttons-row {
   display: flex;
   gap: 15px;
 }
-.filters-buttons-second-row {
+.filters-buttons-row {
   display: flex;
   gap: 15px;
 }
@@ -237,24 +237,14 @@ nav li a:hover:after {
   gap: 30px;
 }
 
-.first-row {
+.row {
   max-height: 207px;
   display: flex;
   flex-direction: row;
   gap: 30px;
 }
 
-.first-row a {
-  flex: 1 0 0;
-}
-
-.second-row {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-}
-
-.second-row a {
+.row a {
   flex: 1 0 0;
 }
 
@@ -341,6 +331,11 @@ footer {
 .footer-title {
   font-weight: 700;
   font-size: 18px;
+}
+
+footer h3 {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .a-propos,
@@ -546,8 +541,27 @@ a {
     order: 0;
   }
   nav {
+    position: relative;
     align-items: flex-start;
+    width: 100%;
+    justify-content: space-around;
   }
+  nav ul {
+    width: 100%;
+    gap: 0px;
+  }
+
+  nav ul li {
+    display: flex;
+    justify-content: center;
+    flex: 1 0 0;
+  }
+
+  nav a {
+    flex: 1 0 0;
+    text-align: center;
+  }
+
   nav li a:hover:after {
     content: "";
     position: absolute;
@@ -599,11 +613,11 @@ a {
     text-align: center;
   }
 
-  .filters-buttons-first-row {
+  .filters-buttons-row {
     width: 100%;
     gap: 10px;
   }
-  .filters-buttons-second-row {
+  .filters-buttons-row {
     width: 100%;
     gap: 10px;
   }
@@ -625,6 +639,7 @@ a {
 
   .hebergements-and-populaires section:nth-child(2) {
     padding: 30px 20px;
+    border-radius: 0;
   }
 
   .hebergements {
@@ -635,12 +650,7 @@ a {
     gap: 15px;
   }
 
-  .hebergements-cards .first-row {
-    gap: 15px;
-    flex-direction: column;
-    min-height: 652px;
-  }
-  .hebergements-cards .second-row {
+  .hebergements-cards .row {
     gap: 15px;
     flex-direction: column;
     min-height: 652px;
@@ -650,6 +660,7 @@ a {
     order: 0;
     margin: 0;
   }
+
   .populaires-title i {
     width: 18px;
     height: 16px;
