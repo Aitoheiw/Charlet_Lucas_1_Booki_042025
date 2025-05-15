@@ -279,6 +279,9 @@ nav li a:hover:after {
   justify-content: space-around;
   align-items: center;
 }
+.card-rating {
+  color: var(--main-color);
+}
 
 /****** Activites ***********/
 
